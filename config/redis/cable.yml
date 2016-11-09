@@ -1,0 +1,14 @@
+development: &development  
+  :url: redis://localhost:6379
+  :host: localhost
+  :port: 6379
+  :timeout: 1
+  :inline: true
+test: *development  
+production: &production  
+  :url: redis://redistogo:72110163101d8cecbb8f7444b5083d98@sculpin.redistogo.com:10815/
+  :host: tarpon.redistogo.com
+  :port: 10272
+  :password: 72110163101d8cecbb8f7444b5083d98
+  :inline: true
+  :timeout: 1
